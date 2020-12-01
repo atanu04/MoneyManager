@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="9"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/total_amount_id"
+        android:text="@string/total"
+        android:textSize="40sp"
+        android:textColor="#009688"
+        android:gravity="end"
+        android:layout_margin="25dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="@string/description"
+            android:gravity="center"
+            android:textSize="25sp"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/debit"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#871818"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/credit"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#4CAF50"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/recycler_view_id"
+        tools:listitem="@layout/row_layout"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            style="@style/Button"
+            android:background="@drawable/button_bg"
+            android:text="@string/add_transaction"
+            android:id="@+id/trans_bt_id"
+            />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_amount"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:padding="40sp"
+        android:textColor="#2196F3"/>
+    <EditText
+        android:id="@+id/amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/total"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:autofillHints="@string/total" />
+
+
+
+    <EditText
+        android:layout_margin="40dp"
+        android:id="@+id/desc_id"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="@string/what_is_for"
+        android:gravity="center"
+        android:autofillHints="@string/gift_for_you" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_margin="30dp"
+        android:weightSum="2"
+        android:id="@+id/radio_group_id"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/credit"
+            android:textSize="25sp"
+            android:textColor="#30931F"
+            android:id="@+id/credit_id"
+            android:checked="true"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/debit"
+            android:textSize="25sp"
+            android:textColor="#871818"
+            android:id="@+id/debit_id"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/submit_bt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

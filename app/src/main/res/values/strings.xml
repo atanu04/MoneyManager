@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string name="total">0</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="description">Description</string>
+    <string name="date">dd/yy/mm</string>
+    <string name="plus">+</string>
+    <string name="enter_the_amount">Enter the Amount</string>
+    <string name="what_is_for">What is for ?</string>
+    <string name="gift_for_you">Gift for you !</string>
+    <string name="submit">Submit</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="delete">Delete All</string>
+
+</resources>
